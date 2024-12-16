@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 800px
+            ;
+        }
+        form{
+            width: 300px;
+            border:none;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            color: rgb(219, 180, 180);
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/workstation.jpg);
+            background-position: center;
+            background-size: contain;
+            border-radius: 10px;
+        }
+        input{
+            background: none;
+            border: none;
+            outline: none;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        button{
+            background-color: brown;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 0 5px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+    </style>
+    
+</head>
+<body>
+    <form action="/" onsubmit="return checkPasscode()">
+        <div id="userName">
+            <label for="name">USERNAME</label>
+            <br>
+            <br>
+            <input type="text" name="name" placeholder="Input your username" required>
+        </div><br>
+        <div class="mail">
+            <label for="email">EMAIL</label>
+            <br><br>
+            <input type="email" name="mail" id="mail" placeholder="input your email" required>
+        </div><br>
+        <div id="passCode">
+            <label for="password">PASSWORD</label><br><br>
+            <input type="password" name="password" id="password" placeholder="input your password" required><br><br>
+            <input type="password" name="pass2" id="pass2" required placeholder="Confirm password">
+        </div><br>
+        <div class="register">
+            <button type="submit">ENROLL</button>
+        </div>
+    </form>
+    <script src="rev.js"></script>
+</body>
+</html>
