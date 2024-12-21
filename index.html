@@ -4,76 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 800px
-            ;
-        }
-        form{
-            width: 300px;
-            border:none;
-            margin: auto;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            color: rgb(219, 180, 180);
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: 600;
-            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://github.com/hdgdjk/D3F4ULT/blob/main/workstation.jpg?raw=true);
-            background-position: center;
-            background-size: contain;
-            border-radius: 10px;
-        }
-        input{
-            background: none;
-            border: none;
-            outline: none;
-            font-family: 'Courier New', Courier, monospace;
-            text-align: center;
-        }
-        button{
-            background-color: brown;
-            color: white;
-            font-family: 'Courier New', Courier, monospace;
-            padding: 0 5px;
-            border: none;
-            outline: none;
-            cursor: pointer;
-        }
-    </style>
-    
+    <link rel="stylesheet" href="/nicaweb/style.css">
 </head>
 <body>
-    <form action="/" onsubmit="return checkPasscode()">
-        <div id="userName">
-            <label for="name">USERNAME</label>
-            <br>
-            <br>
-            <input type="text" name="name" placeholder="Input your username" required>
-        </div><br>
-        <div class="mail">
-            <label for="email">EMAIL</label>
-            <br><br>
-            <input type="email" name="mail" id="mail" placeholder="input your email" required>
-        </div><br>
-        <div id="passCode">
-            <label for="password">PASSWORD</label><br><br>
-            <input type="password" name="password" id="password" placeholder="input your password" required><br><br>
-            <input type="password" name="pass2" id="pass2" required placeholder="Confirm password">
-        </div><br>
-        <div class="register">
-            <button type="submit">ENROLL</button>
+    <div class="container">
+        <div class="name">
+            <h1>BEAUTY BY NICA</h1>
         </div>
-    </form>
-    <script src="rev.js"></script>
+        <div class="navbar">
+            <div class="navlinks">
+                <ul>
+                    <li>
+                        <a href="/">HOME</a>
+                    </li>
+                    <li>
+                        <a href="/">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="/">CONTACT US</a>
+                    </li>
+                    <li>
+                        <a href="/">PRODUCTS</a>
+                    </li>
+                    <li><a href="/">BLOG</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="welcome">
+            <div class="textWelcome">
+                <h1>Welcome <br>
+                <span>to</span><br>
+                Beauty By Nica
+                </h1>
+                <p>At Beauty By Nica we believe in the power to transform,inspire and empower.We have everything you need to express your unique style.Join our community of makeup lovers and discover the impact of feeling beatiful inside and out.</p>
+                <button>LEARN MORE</button>
+            </div>
+            <div class="welcomepic">
+                <img src="/nicaweb/IMG-20241217-WA0003.jpg" alt="">
+            </div>
+        </div>
+        <div class="between">
+            <h1>LET'S MAKE EVERYDAY A MASTERPIECE. FEEL BEAUTIFUL!</h1>
+        </div>
+        <div class="products">
+            <h3 class="head3">Our Products</h3>
+            <div class="categories">
+                <div class="cart1">
+                    <h3>Product1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, illum. Rem officil</p><br>
+                    <img src="/nicaweb/_DSC5799E.jpg" alt="product one pic"><br>
+                    <button>LEARN MORE</button>
+                </div>
+                <!--product2-->
+                <div class="cart1">
+                    <h3>Product2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, illum. Rem officil</p><br>
+                    <img src="/nicaweb/IMG-20241213-WA0005.jpg" alt="product one pic"><br>
+                    <button>LEARN MORE</button>
+                </div>
+                <!--product3-->
+                <div class="cart1">
+                    <h3>Product3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, illum. Rem officil</p><br>
+                    <img src="/nicaweb/IMG-20241213-WA0003.jpg" alt="product one pic"><br>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+        <!--ratings-->
+        <div class="growth">
+            <div class="about1">
+                <h4>5+</h4>
+                <p>Years Of Service</p>
+            </div>
+            <div class="about2">
+                <h4>200+</h4>
+                <p>Services Available</p>
+            </div>
+            <div class="about3">
+                <h4>500+</h4>
+                <p>Satisfied Clients</p>
+            </div>
+            <div class="about4">
+                <h4>100%</h4>
+                <p>Customer Oriented</p>
+            </div>
+        </div>
+
+        <!--appointment-->
+
+        <div class="appointment">
+            <div class="image">
+                <img src="/nicaweb/IMG-20241217-WA0003.jpg" alt="">
+            </div>
+            <div class="desc">
+                <h3>Book An Appointment Today</h3>
+                <p>Let's make everyday a masterpiece. <br>
+                Feel Beautiful</p>
+                <h2>+2547-16-591-634</h2>
+            </div>
+        </div>
+        <!--feedback-->
+        <div class="feedback">
+            <div class="social-media">
+                <h2>Join the Nica Beauty Community On social media <hr></h2>
+                <div class="social-icons">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="whatsapp.png" alt="whatsapp" title="whatsapp">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/nicaweb/facebook.png">
+                                <img src="/nicaweb/facebook.png" alt="facebook" title="facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="#" alt="Tiktok"  title="Tiktok">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="#" alt="Instagram" title="Instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="comments">
+                <h4>Leave Us Comment</h4>
+                <form action="#">
+                   <div class="username">
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username" placeholder="Input your name" required><br>
+                   </div>
+
+                <div class="email">
+                    <label for="mail">Email:</label><br>
+                    <input type="email" pattern="@{a-z}" name="mail" placeholder="input email" required>
+                </div>
+
+                <div class="textarea">
+                    <label for="comments">Comments:</label><br>
+                    <textarea name="comments" id="comments" cols="30" rows="5" required spellcheck="true" data-resize="false" placeholder="Type your comments"></textarea>
+                </div>
+
+                <button type="submit" id="btn">SUBMIT</button>
+                </form>
+            </div>
+            
+        </div>
+
+        <!--address-->
+
+        <div class="address">
+            <address>copyright&COPY;2024</address>
+            Developed by <a href="#">D3F4ULT</a>
+            All rights Reserved <a href="/nicaweb/index.html">Beauty By Nica</a>
+
+            Tel: +2547-16-591-634
+        </div>
+    </div>
+  <script src="/nicaweb/script.js"></script>
 </body>
 </html>
